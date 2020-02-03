@@ -1,0 +1,24 @@
+{
+  "name": "tezos-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@taquito/taquito": "^6.0.0-beta.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "eztz.js": "git+https://github.com/TezTech/eztz.git",
+    "promise-retry": "^1.1.1",
+    "truffle": "^5.2.4-alphaTez.3"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "clean": "rm -rf ./build",
+    "wait-for-sandbox": "node ./scripts/sandbox/waitForNetwork.js",
+    "start-sandbox": "./scripts/sandbox/start_sandbox.sh && npm run wait-for-sandbox",
+    "kill-sandbox": "./scripts/sandbox/kill_sandbox.sh",
+    "restart-sandbox": "npm run kill-sandbox && npm run start-sandbox"
+  },
+  "author": "matej.sima@stove-labs.com",
+  "license": "MIT"
+}
