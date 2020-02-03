@@ -2,7 +2,10 @@
 
 type token_id is
   | Single of unit
-  (* This implementation will only support a `Single` token_id, and will throw a runtime error otherwise *)
+  (* 
+    This implementation will only support a `Single` token_id, 
+    and will throw a runtime error otherwise 
+  *)
   | Mac of nat
 
 type transfer is record
