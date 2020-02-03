@@ -1,5 +1,5 @@
 # Tezos starter kit
-<img src="https://stove-labs.com/logo_transparent.png" alt="drawing" style="width:200px;"/>
+<img src="https://stove-labs.com/logo_transparent.png" width="100px"/>
 
 ## What is the tezos-starter-kit?
 
