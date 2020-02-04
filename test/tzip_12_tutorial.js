@@ -9,7 +9,7 @@ const { unit } = require('./../helpers/constants');
  */
 const { alice, bob } = require('./../scripts/sandbox/accounts');
 
-contract('multi_asset', accounts => {
+contract('tzip_12_tutorial', accounts => {
     let storage;
     let tzip_12_tutorial_instance;
 
