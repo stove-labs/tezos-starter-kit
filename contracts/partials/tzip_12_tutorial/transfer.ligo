@@ -1,4 +1,5 @@
 #include "get_with_default_nat.ligo"
+#include "default_balance.ligo"
 
 function transfer (const transfer_param : transfer_param; var storage : storage) : (list(operation) * storage)
  is begin
@@ -6,10 +7,11 @@ function transfer (const transfer_param : transfer_param; var storage : storage)
         is begin
             (* You're only allowed to transfer your own tokens *)
             if sender =/= transfer.from_ then failwith("Address from_ needs to be equal to the sender") else skip;
-            if get_with_default_nat(storage[transfer.from_], 0n) < transfer.amount then failwith("Insufficient balance") else skip;
+            (* Allow transfer only if the sender has a sufficient balance *)
+            if get_with_default_nat(storage[transfer.from_], default_balance) < transfer.amount then failwith("Insufficient balance") else skip;
             (* Update the ledger accordingly *)
-            storage[transfer.from_] := abs(get_with_default_nat(storage[transfer.from_], 0n) - transfer.amount);
-            storage[transfer.to_] := get_with_default_nat(storage[transfer.to_], 0n) + transfer.amount;
+            storage[transfer.from_] := abs(get_with_default_nat(storage[transfer.from_], default_balance) - transfer.amount);
+            storage[transfer.to_] := get_with_default_nat(storage[transfer.to_], default_balance) + transfer.amount;
         end with Unit;
 
     list_iter(transfer_iterator, transfer_param);

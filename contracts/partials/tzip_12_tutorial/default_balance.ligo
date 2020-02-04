@@ -1,0 +1,1 @@
+const default_balance : nat = 0n;
