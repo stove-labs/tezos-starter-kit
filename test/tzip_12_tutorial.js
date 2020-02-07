@@ -13,7 +13,7 @@ contract('tzip_12_tutorial', accounts => {
     let storage;
     let tzip_12_tutorial_instance;
 
-    beforeEach(async () => {
+    before(async () => {
         tzip_12_tutorial_instance = await tzip_12_tutorial.deployed();
         /**
          * Display the current contract address for debugging purposes
