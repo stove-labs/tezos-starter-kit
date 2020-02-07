@@ -18,7 +18,7 @@ npm i -g truffle@alphaTez
 
 **Unbox the starter kit & install the dependencies**
 ```shell
-$ truffle unbox https://github.com/stove-labs/tezos-starter-kit#getting-started
+$ truffle unbox https://github.com/stove-labs/tezos-starter-kit
 $ cd tezos-starter-kit
 $ npm i
 ```
