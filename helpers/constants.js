@@ -7,6 +7,7 @@ module.exports = {
         }
     },
     contractErrors: {
-        assetIdNotFound: "1"
+        fromEqualToSenderAddress: "Address from_ needs to be equal to the sender",
+        insufficientBalance: "Insufficient balance"
     }
 };

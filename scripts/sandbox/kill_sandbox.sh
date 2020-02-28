@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo "Killing sandbox..."
-docker kill flextesa-sandbox
+export flextesa_protocol="$1"
+docker kill "flextesa-sandbox-$flextesa_protocol"

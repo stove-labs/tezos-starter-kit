@@ -4,8 +4,8 @@
       "test/.gitkeep"
     ],
     "commands": {
-      "Compile": "truffle compile",
-      "Migrate": "truffle migrate",
-      "Test contracts": "truffle test"
+      "Compile": "npm run compile",
+      "Migrate": "npm run migrate",
+      "Test contracts": "npm run test"
     }
   }
