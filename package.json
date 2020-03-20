@@ -4,11 +4,11 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
+    "@taquito/taquito": "^6.1.1-beta.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
+    "lodash": "^4.17.15",
     "promise-retry": "^1.1.1",
-    "truffle": "^5.2.0-tezos.1",
-    "@taquito/taquito": "^6.0.3-beta.0",
-    "lodash": "^4.17.15"
+    "truffle": "^5.2.0-tezos.3"
   },
   "scripts": {
     "test": "truffle test",
