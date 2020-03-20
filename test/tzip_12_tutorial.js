@@ -22,7 +22,7 @@ contract('tzip_12_tutorial', accounts => {
         storage = await tzip_12_tutorial_instance.storage();
     });
 
-    const expectedBalanceAlice = initial_storage[alice.pkh];
+    const expectedBalanceAlice = initial_storage.get(alice.pkh);
     it(`should store a balance of ${expectedBalanceAlice} for Alice`, async () => {
         /**
          * Get balance for Alice from the smart contract's storage (by a big map key)
