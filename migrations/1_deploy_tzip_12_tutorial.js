@@ -12,9 +12,7 @@ module.exports = async (deployer, network, accounts) => {
 
     // TODO format to await instead of .then
     deployer.deploy(tzip_12, initial_storage)
-    .then( (contract) => 
-        saveContractAddress('tzip12', contract.address)
-    );
+        .then(contract => saveContractAddress('tzip12', contract.address));
 
 };
 module.exports.initial_storage = initial_storage;
