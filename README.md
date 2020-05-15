@@ -9,10 +9,7 @@ The Tezos starter kit provides a *truffle box* with reasonable defaults to kick 
 
 - **Docker** - used to run a local Tezos node together with the LIGO compiler (If you're on linux, follow the post-installation steps as well)
 - **Node.js** - Javascript runtime environment that we'll use for testing and deployment
-- **truffle@tezos** - Testing framework, originally built for Ethereum that now includes support for Tezos. It can be installed by running:
-```
-npm i -g truffle@tezos
-```
+- **truffle@tezos** - Testing framework, originally built for Ethereum that now includes support for Tezos.
 
 ## Getting started
 
