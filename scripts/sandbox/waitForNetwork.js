@@ -1,6 +1,7 @@
 const promiseRetry = require('promise-retry');
 const { TezosToolkit } = require('@taquito/taquito');
 const { networks } = require('./../../truffle-config');
+const sleep = require('sleep-promise');
 
 const Tezos = new TezosToolkit();
 Tezos.setProvider({

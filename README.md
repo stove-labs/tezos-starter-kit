@@ -40,6 +40,13 @@ $ npm run migrate
 $ npm run test
 ```
 
+**Watch project files and recompile/remigrate/retest**
+```shell
+$ npm run compile:watch
+$ npm run migrate:watch
+$ npm run test:watch
+```
+
 ## Sandbox management
 
 Archive mode sandbox Tezos node is provided within this box with RPC exposed at port `8732` and with two accounts that are generously funded.
@@ -66,5 +73,5 @@ In order to use your migration scripts with a different network than your local 
 
 Make sure to [claim a new account at the faucet](https://faucet.tzalpha.net), and replace the `faucet.json` file with the new one downloaded previously.
 ```shell
-$ truffle migrate --network carthagenet
+$ npm run migrate -- --network carthagenet
 ```
