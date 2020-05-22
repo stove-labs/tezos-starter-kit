@@ -1,3 +1,5 @@
-export flextesa_protocol="$1"
-./scripts/sandbox/kill_sandbox.sh "$flextesa_protocol"
-./scripts/sandbox/start_sandbox.sh "$flextesa_protocol"
+#!/bin/bash
+
+echo "Restarting sandbox..."
+./scripts/sandbox/kill_sandbox.sh "$1"
+./scripts/sandbox/start_sandbox.sh "$1"

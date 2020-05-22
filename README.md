@@ -27,7 +27,7 @@ $ npm run compile
 
 **Start the local sandbox node**
 ```shell
-$ npm run start-sandbox -- carthage
+$ npm run sandbox:start -- carthage
 ```
 
 **Migrate the compiled contracts**
@@ -56,9 +56,9 @@ Archive mode sandbox Tezos node is provided within this box with RPC exposed at 
 #### Commands
 
 ```shell
-$ npm run start-sandbox -- carthage
-$ npm run kill-sandbox -- carthage
-$ npm run restart-sandbox -- carthage
+$ npm run sandbox:start -- carthage
+$ npm run sandbox:kill -- carthage
+$ npm run sandbox:restart -- carthage
 ```
 
 #### Available accounts

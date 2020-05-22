@@ -25,7 +25,7 @@ const kill = () => {
 
 const clean = () => {
     console.log('Cleaning BBBox');
-    rimraf.sync(basePath);
+    execSync(`cd ${basePath} && make drop`, baseOptions)
 }
 
 const update = () => {
@@ -34,4 +34,6 @@ const update = () => {
     init();
 }
 
-module.exports = { start, kill, clean, update, init };
+const restart = () => kill() && start()
+
+module.exports = { start, kill, clean, update, init, restart };
