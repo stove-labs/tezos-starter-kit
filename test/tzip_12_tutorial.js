@@ -1,7 +1,6 @@
 const tzip_12_tutorial = artifacts.require('tzip_12_tutorial');
 
 const { initial_storage } = require('../migrations/1_deploy_tzip_12_tutorial.js');
-const bigMapKeyNotFound = require('./../helpers/bigMapKeyNotFound.js');
 const constants = require('./../helpers/constants.js');
 /**
  * For testing on a babylonnet (testnet), instead of the sandbox network,
@@ -32,18 +31,8 @@ contract('tzip_12_tutorial', accounts => {
     });
 
     it(`should not store any balance for Bob`, async () => {
-        let fetchBalanceError;
-
-        try {
-            /**
-             * If a big map key does not exist in the storage, the RPC returns a 404 HttpResponseError
-             */
-            await storage.get(bob.pkh);
-        } catch (e) {
-            fetchBalanceError = e;
-        }
-
-        assert(bigMapKeyNotFound(fetchBalanceError))
+        let balanceBob = await storage.get(bob.pkh);
+        assert.equal(balanceBob, undefined);
     });
 
     it('should transfer 1 token from Alice to Bob', async () => {
