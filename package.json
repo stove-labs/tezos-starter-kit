@@ -9,6 +9,7 @@
     "lodash": "^4.17.15",
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
+    "rimraf": "^3.0.2",
     "truffle": "^5.3.0-tezos.2"
   },
   "scripts": {
@@ -21,6 +22,12 @@
     "migrate": "truffle migrate",
     "migrate:clean": "npm run clean && npm run migrate",
     "migrate:watch": "onchange -i -k 'contracts/**' 'test/**' 'migrations/**' -- npm run migrate:clean",
+    "tools:start": "node ./scripts/tools.js start",
+    "tools:kill": "node ./scripts/tools.js kill",
+    "tools:update": "node ./scripts/tools.js update",
+    "tools:clean": "node ./scripts/tools.js clean",
+    "tools:init": "node ./scripts/tools.js init",
+    "tools:restart": "npm run tool:kill && npm run tool:restart",
     "clean": "rm -rf ./build",
     "wait-for-sandbox": "node ./scripts/sandbox/waitForNetwork.js",
     "start-sandbox": "./scripts/sandbox/start_sandbox.sh",
