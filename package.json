@@ -5,6 +5,7 @@
   "devDependencies": {
     "@taquito/taquito": "^6.2.0-beta.1",
     "commitizen": "^4.1.2",
+    "conventional-github-releaser": "^3.1.3",
     "cz-conventional-changelog": "^3.2.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
@@ -39,7 +40,8 @@
     "env:kill": "npm run sandbox:kill -- carthage && npm run tools:kill bbbox",
     "env:restart": "npm run sandbox:restart -- carthage && npm run tools:restart bbbox",
     "env:clean": "npm run tools:kill bbbox && npm run tools:clean bbbox",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "release": "conventional-github-releaser -p angular"
   },
   "author": "matej.sima@stove-labs.com",
   "license": "MIT",
