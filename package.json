@@ -5,6 +5,7 @@
   "devDependencies": {
     "@taquito/taquito": "^6.2.0-beta.1",
     "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
     "lodash": "^4.17.15",
@@ -41,5 +42,10 @@
     "commit": "git-cz"
   },
   "author": "matej.sima@stove-labs.com",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
