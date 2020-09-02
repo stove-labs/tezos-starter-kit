@@ -1,1 +1,0 @@
-docker build -t stovelabs/image-carthagebox-run-archive -f ./scripts/sandbox/docker/carthage/Dockerfile ./scripts/sandbox/docker/carthage

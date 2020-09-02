@@ -11,6 +11,8 @@ The Tezos starter kit provides a *truffle box* with reasonable defaults to kick 
 - **Node.js** - Javascript runtime environment that we'll use for testing and deployment
 - **LIGO** - High level programming language for the Tezos blockchain
 - **truffle@tezos** - Testing framework, originally built for Ethereum that now includes support for Tezos.
+- **ganache-cli@tezos** - Part of the Truffle suite of blockchain development tools. It creates isolated sandboxes using Flextesa to automate reproducible tests with faster networks. Install Ganache-CLI globally with `npm install -g ganache-cli@6.10.0-tezos.1`.
+
 
 ## Getting started
 
@@ -28,7 +30,7 @@ $ npm run compile
 
 **Start the local sandbox node**
 ```shell
-$ npm run sandbox:start -- carthage
+$ npm run sandbox:start
 ```
 
 **Migrate the compiled contracts**
@@ -50,16 +52,13 @@ $ npm run test:watch
 
 ## Sandbox management
 
-Archive mode sandbox Tezos node is provided within this box with RPC exposed at port `8732` and with two accounts that are generously funded.
+Archive mode sandbox Tezos node is provided within this box with RPC exposed at port `8732` and with ten accounts that are generously funded. You can find all account details in the terminal at the startup of the sandbox.
 
-> You can start a sandbox with a specific protocol by passing an additional argument to the sandbox commands, e.g. `babylon` or `carthage`
 
 #### Commands
 
 ```shell
-$ npm run sandbox:start -- carthage
-$ npm run sandbox:kill -- carthage
-$ npm run sandbox:restart -- carthage
+$ npm run sandbox:start
 ```
 
 #### Available accounts
