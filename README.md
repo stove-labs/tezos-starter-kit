@@ -66,6 +66,8 @@ $ npm run sandbox:start
 |---|---|---|---|
 |alice   |tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb   |edpkvGfYw3LyB1UcCahKQk4rF2tvbMUk8GFiTuMjL75uGXrpvKXhjn   |edsk3QoqBuvdamxouPhin7swCvkQNgq4jP5KZPbwWNnwdZpSpJiEbq   |
 |bob   |tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6   |edpkurPsQ8eUApnLUJ9ZPDvu98E8VNj4KtJa1aZr16Cr5ow5VHKnz4   |edsk3RFfvaFaxbHx8BMtEW1rKQcPtDML3LXjNqMNLCzC3wLC1bWbAt   |
+|baker |  tz1W15VdfAc1ePgrGMyimCz1skJvY6hvMyiu | edpkuqBgimykYEEfcDAVrwguoUoQku2amoeGQoZLv4qVsWCzTWcM1u | edsk3TRzqPksMdn9YSgr5kBPEgj6WmKYA1QgzqjRVdFTzy9gi9vbzE |
+
 
 ## Usage with public testnets (Babylonnet, Carthagenet, ...)
 
