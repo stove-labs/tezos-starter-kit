@@ -45,5 +45,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "ganache-cli": "^6.10.0-tezos.1"
   }
 }
