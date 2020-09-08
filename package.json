@@ -32,12 +32,10 @@
     "tools:init": "node ./scripts/tools.js init",
     "tools:restart": "node ./scripts/tools.js restart",
     "wait-for-sandbox": "node ./scripts/sandbox/waitForNetwork.js",
-    "sandbox:start": "./scripts/sandbox/start_sandbox.sh",
-    "sandbox:kill": "./scripts/sandbox/kill_sandbox.sh",
-    "sandbox:restart": "./scripts/sandbox/restart_sandbox.sh",
-    "env:start": "npm run sandbox:start -- carthage && npm run tools:start bbbox",
-    "env:kill": "npm run sandbox:kill -- carthage && npm run tools:kill bbbox",
-    "env:restart": "npm run sandbox:restart -- carthage && npm run tools:restart bbbox",
+    "sandbox:start": "./scripts/sandbox/start_ganache-cli.sh",
+    "env:start": "npm run sandbox:start && npm run tools:start bbbox",
+    "env:kill": "npm run tools:kill bbbox",
+    "env:restart": "npm run tools:restart bbbox",
     "env:clean": "npm run tools:kill bbbox && npm run tools:clean bbbox",
     "commit": "git-cz"
   },
@@ -47,5 +45,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "ganache-cli": "^6.10.0-tezos.1"
   }
 }
