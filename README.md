@@ -11,7 +11,7 @@ The Tezos starter kit provides a *truffle box* with reasonable defaults to kick 
 - **Node.js** - Javascript runtime environment that we'll use for testing and deployment
 - **LIGO** - High level programming language for the Tezos blockchain
 - **truffle@tezos** - Testing framework, originally built for Ethereum that now includes support for Tezos.
-- **ganache-cli@tezos** - Part of the Truffle suite of blockchain development tools. It creates isolated sandboxes using Flextesa to automate reproducible tests with faster networks. Install Ganache-CLI globally with `npm install -g ganache-cli@6.10.0-tezos.1`.
+- **ganache-cli@tezos** - Part of the Truffle suite of blockchain development tools. It creates isolated sandboxes using Flextesa to automate reproducible tests with faster networks.
 
 
 ## Getting started
