@@ -8,6 +8,7 @@
     "cz-conventional-changelog": "^3.2.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
+    "ganache-cli": "^6.10.0-tezos.1",
     "lodash": "^4.17.15",
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
@@ -32,7 +33,7 @@
     "tools:init": "node ./scripts/tools.js init",
     "tools:restart": "node ./scripts/tools.js restart",
     "wait-for-sandbox": "node ./scripts/sandbox/waitForNetwork.js",
-    "sandbox:start": "./scripts/sandbox/start_ganache-cli.sh",
+    "sandbox:start": "ganache-cli --flavor tezos --seed alice --accounts 4",
     "env:start": "npm run sandbox:start && npm run tools:start bbbox",
     "env:kill": "npm run tools:kill bbbox",
     "env:restart": "npm run tools:restart bbbox",
@@ -46,7 +47,4 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "ganache-cli": "^6.10.0-tezos.1"
-  }
 }
