@@ -1,1 +1,1 @@
-./node_modules/ganache-cli/cli.js --flavor tezos --seed alice --accounts 4
+./node_modules/ganache-cli/cli.js --flavor tezos --seed alice --accounts 4 --host 0.0.0.0
