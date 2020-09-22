@@ -1,6 +1,8 @@
 # Tezos starter kit
 <img src="https://stove-labs.com/logo_transparent.png" width="100px"/>
 
+![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/test/badge.svg?branch=dev)
+
 ## What is the tezos-starter-kit?
 
 The Tezos starter kit provides a *truffle box* with reasonable defaults to kick start your smart contract development experience. It includes a ready to use archive sandbox node with RPC & CORS configured.
