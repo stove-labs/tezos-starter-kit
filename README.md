@@ -1,7 +1,7 @@
 # Tezos starter kit
 <img src="https://stove-labs.com/logo_transparent.png" width="100px"/>
 
-![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Carthage/badge.svg?branch=dev)
+![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Carthage/badge.svg?branch=dev) ![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Delphi/badge.svg?branch=dev)
 
 ## What is the tezos-starter-kit?
 
