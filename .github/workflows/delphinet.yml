@@ -1,0 +1,25 @@
+name: Delphi
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:      
+    - uses: actions/checkout@v2
+  
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - run: npm i
+    - run: docker run --rm -p 8732:20000 --detach registry.gitlab.com/tezos/flextesa:896b2200-run delphibox start 
+    - name: Sleep for 20 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '20s'
+    - run: npm run migrate
