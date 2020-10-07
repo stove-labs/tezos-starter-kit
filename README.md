@@ -71,11 +71,12 @@ $ npm run sandbox:start
 |baker |  tz1W15VdfAc1ePgrGMyimCz1skJvY6hvMyiu | edpkuqBgimykYEEfcDAVrwguoUoQku2amoeGQoZLv4qVsWCzTWcM1u | edsk3TRzqPksMdn9YSgr5kBPEgj6WmKYA1QgzqjRVdFTzy9gi9vbzE |
 
 
-## Usage with public testnets (Babylonnet, Carthagenet, ...)
+## Usage with public testnets (Carthagenet, Delphinet ...)
 
 In order to use your migration scripts with a different network than your local sandbox, you can specify an optional `--network` argument.
 
 Make sure to [claim a new account at the faucet](https://faucet.tzalpha.net), and replace the `faucet.json` file with the new one downloaded previously.
 ```shell
 $ npm run migrate -- --network carthagenet
+$ npm run migrate -- --network delphinet
 ```
