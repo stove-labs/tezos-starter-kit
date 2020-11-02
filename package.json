@@ -12,7 +12,7 @@
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
     "rimraf": "^3.0.2",
-    "truffle": "^5.3.0-tezos.2"
+    "truffle": "^5.5.0-tezos.4"
   },
   "scripts": {
     "clean": "rm -rf ./build",
