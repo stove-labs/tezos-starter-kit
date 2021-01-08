@@ -8,6 +8,7 @@
     "cz-conventional-changelog": "^3.2.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
+    "ganache-cli": "^6.11.0-tezos.0",
     "lodash": "^4.17.19",
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
@@ -45,8 +46,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "ganache-cli": "^6.10.0-tezos.1"
   }
 }
