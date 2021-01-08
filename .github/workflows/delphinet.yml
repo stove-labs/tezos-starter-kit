@@ -17,11 +17,11 @@ jobs:
       with:
         node-version: 14.x
     - run: npm i
-    - run: docker run --rm -p 8732:20000 --detach registry.gitlab.com/tezos/flextesa:896b2200-run delphibox start 
-    - name: Sleep for 20 seconds
+    - run: npm run sandbox:start &
+    - name: Sleep for 15 seconds
       uses: jakejarvis/wait-action@master
       with:
-        time: '20s'
+        time: '15s'
     - run: npm run migrate
   test: 
     runs-on: ubuntu-latest
@@ -32,9 +32,9 @@ jobs:
       with:
         node-version: 14.x
     - run: npm i
-    - run: docker run --rm -p 8732:20000 --detach registry.gitlab.com/tezos/flextesa:896b2200-run delphibox start
-    - name: Sleep for 20 seconds
+    - run: npm run sandbox:start &
+    - name: Sleep for 15 seconds
       uses: jakejarvis/wait-action@master
       with:
-        time: '20s' 
+        time: '15s'
     - run: npm run test
