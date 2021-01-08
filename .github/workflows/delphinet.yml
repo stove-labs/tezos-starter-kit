@@ -15,7 +15,7 @@ jobs:
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 10.x
     - run: npm ci
     - run: npm run sandbox:start &
     - name: Sleep for 15 seconds
@@ -30,7 +30,7 @@ jobs:
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 10.x
     - run: npm i
     - run: npm run sandbox:start &
     - name: Sleep for 15 seconds
