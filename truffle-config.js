@@ -29,6 +29,15 @@ module.exports = {
       password,
       email,
       type: "tezos"
+    },
+    delphinet: {
+      host: "https://delphinet-tezos.giganode.io",
+      network_id: "*",
+      secret,
+      mnemonic,
+      password,
+      email,
+      type: "tezos"
     }
   }
 };

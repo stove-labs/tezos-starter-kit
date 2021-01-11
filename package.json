@@ -8,11 +8,12 @@
     "cz-conventional-changelog": "^3.2.0",
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
-    "lodash": "^4.17.15",
+    "ganache-cli": "^6.11.0-tezos.0",
+    "lodash": "^4.17.19",
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
     "rimraf": "^3.0.2",
-    "truffle": "^5.3.0-tezos.2"
+    "truffle": "^5.5.0-tezos.4"
   },
   "scripts": {
     "clean": "rm -rf ./build",
@@ -37,7 +38,8 @@
     "env:kill": "npm run tools:kill bbbox",
     "env:restart": "npm run tools:restart bbbox",
     "env:clean": "npm run tools:kill bbbox && npm run tools:clean bbbox",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "postinstall": "node ./scripts/postinstall.js"
   },
   "author": "matej.sima@stove-labs.com",
   "license": "MIT",
@@ -45,8 +47,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "ganache-cli": "^6.10.0-tezos.1"
   }
 }
