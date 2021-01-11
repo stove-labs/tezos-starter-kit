@@ -12,16 +12,7 @@ module.exports = {
       secretKey: alice.sk,
       type: "tezos"
     },
-    babylonnet: {
-      host: "https://babylonnet.tezos.org.ua",
-      network_id: "*",
-      secret,
-      mnemonic,
-      password,
-      email,
-      type: "tezos"
-    },
-    carthagenet: {
+    delphinet: {
       host: "https://testnet-tezos.giganode.io",
       network_id: "*",
       secret,
@@ -30,15 +21,6 @@ module.exports = {
       email,
       type: "tezos"
     },
-    delphinet: {
-      host: "https://delphinet-tezos.giganode.io",
-      network_id: "*",
-      secret,
-      mnemonic,
-      password,
-      email,
-      type: "tezos"
-    }
   }
 };
 

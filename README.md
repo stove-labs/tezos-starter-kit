@@ -1,7 +1,7 @@
 # Tezos starter kit
 <img src="https://stove-labs.com/logo_transparent.png" width="100px"/>
 
-![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Carthage/badge.svg?branch=dev) ![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Delphi/badge.svg?branch=dev)
+![npm test workflow](https://github.com/stove-labs/tezos-starter-kit/workflows/Delphi/badge.svg?branch=dev)
 
 ## What is the tezos-starter-kit?
 
@@ -79,6 +79,5 @@ In order to use your migration scripts with a different network than your local 
 
 Make sure to [claim a new account at the faucet](https://faucet.tzalpha.net), and replace the `faucet.json` file with the new one downloaded previously.
 ```shell
-$ npm run migrate -- --network carthagenet
 $ npm run migrate -- --network delphinet
 ```
