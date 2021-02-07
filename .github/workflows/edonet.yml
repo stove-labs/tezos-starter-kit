@@ -1,0 +1,40 @@
+name: Edo
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:      
+    - uses: actions/checkout@v2
+  
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm i
+    - run: npm run sandbox:start -- -k edo &
+    - name: Sleep for 20 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '20s'
+    - run: npm run migrate
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm i
+    - run: npm run sandbox:start -- -k edo &
+    - name: Sleep for 20 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '20s'
+    - run: npm run test
