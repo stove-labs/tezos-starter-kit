@@ -81,3 +81,15 @@ Make sure to [claim a new account at the faucet](https://faucet.tzalpha.net), an
 ```shell
 $ npm run migrate -- --network delphinet
 ```
+
+## Resolving issues
+
+### Sandbox does not start
+
+> flextesa: option '--protocol-hash' cannot be repeated
+
+The solution is to update the sandbox image to the latest version with:
+
+```
+docker pull trufflesuite/flextesa-mini-archive
+```
