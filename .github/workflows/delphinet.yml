@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm i
+    - run: npm ci
     - run: npm run sandbox:start &
     - name: Sleep for 20 seconds
       uses: jakejarvis/wait-action@master
@@ -31,7 +31,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm i
+    - run: npm ci
     - run: npm run sandbox:start &
     - name: Sleep for 20 seconds
       uses: jakejarvis/wait-action@master
