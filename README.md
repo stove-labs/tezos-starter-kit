@@ -62,7 +62,9 @@ Archive mode sandbox Tezos node is provided within this box with RPC exposed at 
 #### Commands
 
 ```shell
+# for default Delphi protocol
 $ npm run sandbox:start
+# for Edo protocol
 ```
 
 #### Available accounts
