@@ -1,1 +1,1 @@
-./node_modules/ganache-cli/cli.js --flavor tezos --seed alice --accounts 4 --host 0.0.0.0 --genesisBlockHash BLEY49gkRAU5YN5LABnNNSEvjZz2WU8M5hFdoTrxZSC5GYQ7KZT
+./node_modules/ganache-cli/cli.js --flavor tezos --seed alice --accounts 4 --host 0.0.0.0 --genesisBlockHash BLEY49gkRAU5YN5LABnNNSEvjZz2WU8M5hFdoTrxZSC5GYQ7KZT "$@"

@@ -62,7 +62,9 @@ Archive mode sandbox Tezos node is provided within this box with RPC exposed at 
 #### Commands
 
 ```shell
+# for default Delphi protocol
 $ npm run sandbox:start
+# for Edo protocol
 ```
 
 #### Available accounts
@@ -80,4 +82,16 @@ In order to use your migration scripts with a different network than your local 
 Make sure to [claim a new account at the faucet](https://faucet.tzalpha.net), and replace the `faucet.json` file with the new one downloaded previously.
 ```shell
 $ npm run migrate -- --network delphinet
+```
+
+## Resolving issues
+
+### Sandbox does not start
+
+> flextesa: option '--protocol-hash' cannot be repeated
+
+The solution is to update the sandbox image to the latest version with:
+
+```
+docker pull trufflesuite/flextesa-mini-archive
 ```

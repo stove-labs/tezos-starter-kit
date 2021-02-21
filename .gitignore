@@ -3,3 +3,4 @@ node_modules/
 deployments/
 scripts/tools/**
 !scripts/tools/*.js
+.DS_Store
