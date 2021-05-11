@@ -9,7 +9,7 @@
     "eztz.js": "git+https://github.com/TezTech/eztz.git",
     "fs-extra": "^9.0.0",
     "ganache-cli": "^6.11.0-tezos.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "onchange": "^7.0.2",
     "promise-retry": "^1.1.1",
     "rimraf": "^3.0.2",
